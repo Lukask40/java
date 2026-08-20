@@ -1,25 +1,19 @@
 import java.util.Scanner;
 
-public class Diversao5 {
+public class atv05 {
     public static void main(String[] args) {
-    Scanner sc =new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
+        int numero;
 
-        
+        System.out.print("Digite um número: ");
+        numero = scanner.nextInt();
 
-        System.out.println("Informe a senha: ");
-        String senha=sc.nextLine();
-
-        if (senha.equals("LG1234")){
-            System.out.println("Porta Aberta.");
-        }else{
-            System.out.println("Senha não confere.");
+        while (numero >= 0) {
+            System.out.print("Digite outro número (ou um negativo para sair): ");
+            numero = scanner.nextInt();
         }
 
-        
-        sc.close();
-    
-        }
+        System.out.println("Programa encerrado.");
+        scanner.close();
     }
-
-    
-
+}
